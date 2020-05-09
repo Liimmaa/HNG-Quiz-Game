@@ -56,7 +56,7 @@ var app = {
         }
         else {
             data.className = "wrong";
-            data.innerHTML = "Wrong".id[id.length - 1] == this.questions[this.index].answer;
+            data.innerHTML = "Wrong";
         }
     },
     notClickAble:function() {
@@ -86,8 +86,8 @@ function button(data) {
     app.notClickAble();
 }
 
-function next() {
-    app.next();
+function next(data) {
+    app.next(data);
     app.clickAble();
 }
 
