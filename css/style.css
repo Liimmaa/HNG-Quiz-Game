@@ -48,3 +48,19 @@ body{
     font-size: 20px;
     color: white;
 }
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .site-title {
+        margin: 50%  20%;
+    }
+    
+    .site-title h1 {
+        font-size: 40px;
+    }
