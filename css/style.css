@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: rgb(241, 126, 145);
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    line-height: 1.5;
+}
+
+.site-title {
+    margin-left: 18rem;
+    padding: 0;
+}
+
+.site-title h1 {
+    margin: 20% 0 0 0;
+    color: white;
+    font-size: 60px;
+}
+
+.site-title a {
+    text-decoration: none;
+    color: rgb(194, 12, 12);
+    margin: 0;
+}
+
+.site-title #button {
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    padding: 10px 20px;
+    background-color: peachpuff;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.site-title p {
+    font-size: 20px;
+    color: white;
+}

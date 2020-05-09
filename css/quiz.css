@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+}
+
+body{
+    background-image: url('../images/artem-maltsev-0CvHQ62gwY8-unsplash.jpg');
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#header {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px auto;
+    color: white;
+}
+
+#container {
+    height: 500px;
+    width: 56rem;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+#container .question {
+    background-color: gray;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+#container .options {
+    display: flex;
+    flex-direction: column;
+}
+
+ #container .options {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#container .options ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+#container .options ul li {
+    background-color: #df5881;
+    width: 45%;
+    padding: 15px;
+    border-radius: 12px;
+    color: #ffffff;
+    margin: 30px 15px 15px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0px 3px 0px #c33694;
+    outline: none;
+} 
+
+#container .options ul li:active {
+    box-shadow: 0px 3px 0px transparent;
+}
+
+#container .options ul li.correct {
+    background-color: #076d07;
+    box-shadow: 0px 3px 0px #076d07;
+}
+
+#container .options ul li.wrong {
+    background-color: red;
+    box-shadow: 0px 3px 0px rgb(149, 26, 26);
+}
+
+#container .score {
+    width: 100%;
+}
+
+#container .score .next {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#container .score .next button {
+    background-color: gray;
+    color: #ffffff; 
+    border: none;
+    padding: 10px 3rem;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 3px 0px rgb(85, 80, 80);
+    outline: none;
+}
+
+#container .score .next button:active{
+    box-shadow: 0px 3px 0px transparent;
+}
+
+#container .score .score-card {
+    padding: 20px 0 0 0;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#container .score .score-card span {
+    background-color: rgb(42, 42, 48);
+    color: white;
+    border-radius: 8px;
+    padding: 3px 15px;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 768px){
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    #container {
+        height: 580px;
+        width: 70vw;
+        margin: 30px 0;
+        margin-left: 0 !important;
+    }
+
+    #container .options ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+    }
+    
+    #container .options ul li {
+        background-color: #df5881;
+        width: 50vw;
+        padding: 13px;
+        margin: 15px;
+        font-size: 14px;
+    } 
+
+
+    
+
+    
+     
+    
+    
+/* } */
