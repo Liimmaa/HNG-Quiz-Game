@@ -56,7 +56,7 @@ var app = {
         }
         else {
             data.className = "wrong";
-            data.innerHTML = "Wrong";
+            data.innerHTML = "Wrong".id[id.length - 1] == this.questions[this.index].answer;
         }
     },
     notClickAble:function() {
